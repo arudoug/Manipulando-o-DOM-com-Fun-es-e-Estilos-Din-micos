@@ -14,22 +14,22 @@
 
 <script>
     function mudarCorFundo() {
-        // Solicita ao usuário que insira uma cor
+        
         let cor = prompt("Por favor, insira uma cor em hexadecimal (ex: #ff0000) ou o nome em inglês (ex: red):");
 
-        // Verifica se a cor é válida
+        
         if (isCorValida(cor)) {
             document.body.style.backgroundColor = cor;
         } else {
-            document.body.style.backgroundColor = "white"; // Cor padrão se inválido
+            document.body.style.backgroundColor = "white"; 
         }
     }
 
     function isCorValida(cor) {
-        // Verifica se a cor é um nome válido ou um hexadecimal
+      
         const div = document.createElement('div');
         div.style.color = cor;
-        return div.style.color !== ''; // Retorna true se a cor for válida
+        return div.style.color !== ''; 
     }
 
     mudarCorFundo();
